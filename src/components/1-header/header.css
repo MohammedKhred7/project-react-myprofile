@@ -1,0 +1,115 @@
+header.flex{
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    margin-top: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+header ul.flex{
+    gap: 16px;
+
+}
+
+header.flex nav{
+    background-color: var(--bgHeader);
+    padding: 0.77rem 1.6rem;
+    border-radius: 55px;
+    box-shadow: 1px 1px 40px var(--box-hover);
+}
+header ul li a {
+    color: var(--title);
+    opacity: 0.9;
+    font-size: 0.88rem;
+    font-weight:500;
+}
+
+header ul li a:hover {
+    color: var(--blue);
+    opacity: 1;
+}
+
+
+header .button-menu{
+    display: none;
+}
+
+.fixed{
+    position: fixed;
+    inset: 0;
+    z-index: 11;
+    background-color: rgba(40, 40, 48, 0.90);
+}
+
+.fixed ul.model{
+    animation: MYanimation 0.5s 1;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+}
+.fixed ul.model li{
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+}
+
+.fixed ul.model li:last-child{
+    border: none;
+}
+.fixed ul.model li:first-child{
+    text-align: right;
+    border: none;
+    padding-bottom: 0.5rem;
+}
+
+.fixed ul.model li a{
+    font-size: 1rem;
+}
+
+header .button-menu ,header .button-moon{
+    background-color: var(--bgHeader);
+    height: 2.4rem;
+    width: 2.4rem;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid rgba(180, 119, 5, 0.212);
+    border-radius: 30px;
+    color: var(--title);
+    transition: 0.2s;
+}
+header .icon-weather-sunny{
+    color: rgb(241, 182, 73);
+    font-size: 1.1rem;
+}
+header .icon-close-solid{
+font-size: 1.3rem;
+    color: var(--subtitle);
+    transition: 0.3s;
+}
+
+header .icon-close-solid:hover{
+    font-size: 1.5rem;
+        color:  rgba(206, 136, 5, 0.432);
+        rotate: 180deg;
+    }
+header .button-menu:hover{
+    color: var(--title);
+    border: 2px solid rgba(206, 136, 5, 0.432);
+}
+header .button-moon:hover{
+    color: var(--title);
+    border: 2px solid var(--subtitle);
+}
+
+@keyframes MYanimation {
+    0% {scale: 0;}
+    60%{scale: 1.2;}
+    100%{scale: 1;}
+}
+@media (max-width: 700px) {
+    header nav {display:none;}
+    header .button-menu {display:block;}
+    }

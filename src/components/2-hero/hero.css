@@ -1,0 +1,63 @@
+section.hero{
+    margin-top: 3rem;
+}
+
+section.hero .left_section{
+    flex-grow: 1;
+}
+section.hero .icon-check_circle{
+    color: var(--blue);
+    font-size: 1.1rem;
+}
+section.hero .image_avatar{
+    width: 220px;
+    height: 220px;
+    border: 1px solid rgb(141, 95, 9);
+    border-radius: 50%;  
+    padding: 2px;
+    margin-right: 0.6rem;
+    box-shadow: 2px 2px 40px rgba(128, 128, 128, 0.87) inset;
+}
+section.hero .avatar{
+    margin-bottom: 0.6rem;
+}
+section.hero .title{
+    letter-spacing: 2px;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 24px 0;
+    color: var(--title);
+}
+section.hero .subtitle{
+    font-size: 0.9rem;
+    color: var(--subtitle);
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+}
+
+section.hero .icons{
+    font-size: 1.4rem;
+    gap: 2rem;
+    color: var(--subtitle);
+}
+
+section.hero .icons .icon:hover{
+    font-size: 1.5rem;
+   transition: 0.3;
+   cursor: pointer;
+   color: var(--icon-hover);
+}
+
+/* ===================================
+    2. Right Section ==> animation
+====================================== */
+section.hero .animation {
+    width: 80%;
+    translate: 100px 55px;
+  }
+
+  @media (max-width: 1250px) {
+    section.hero .animation {
+      display: none;
+    }
+  }
