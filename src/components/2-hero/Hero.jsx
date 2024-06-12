@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="hero flex">
       <div className="left_section">
         <div className="avatar">
-          <img src="/my.jpg" className="image_avatar" alt="my image" />
+          <img src="/project-react-myprofile/my.jpg" className="image_avatar" alt="my image" />
           <span className="icon-check_circle"></span>
         </div>
 
