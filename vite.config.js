@@ -3,11 +3,8 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  // base: "/Project-react-myProfile/",
+  https:'//github.com/MohammedKhred7.github.io/Project-react-myProfile',
   plugins: [react()],
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: ['./src/setupTests.js'],
-  },
+  publicDir: 'public'
 });
+
